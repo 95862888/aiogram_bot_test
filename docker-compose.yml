@@ -1,0 +1,32 @@
+version: '3'
+services:
+    action_server:
+      container_name: "action_server"
+      build:
+        context: ./rasa/actions
+      volumes:
+        - ./rasa/actions:/app/actions
+        - ./rasa/data:/app/data
+      ports:
+        - "5055:5055"
+
+    rasa_core:
+      container_name: "rasa_core"
+      user: root
+      build:
+        context:  ./rasa
+      volumes:
+      - ./rasa/:/app
+      ports:
+        - "5005:5005"
+      depends_on:
+        - action_server
+
+    aiogram:
+      container_name: "aiogram_bot"
+      build:
+        context: ./aiogram
+      ports:
+        - "8081:8081"
+      depends_on:
+        - rasa_core
