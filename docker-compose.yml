@@ -1,0 +1,8 @@
+version: '3'
+services:
+    aiogram:
+      container_name: "aiogram_bot"
+      build:
+        context: .
+      ports:
+        - "8081:8081"
