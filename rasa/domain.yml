@@ -36,6 +36,36 @@ intents:
   - ticket_issuing_time
   - which_executive_authority_process_my_doc
   - which_government_agency_provides_service
+  - result_request_in_gosuslugi
+  - which_office_should_i_go_to
+  - list_of_documents_for_mfc
+  - details_for_payment_of_state_duty
+  - how_can_i_pay_the_stamp_duty
+  - example_filling_request
+  - can_i_use_copy_of_document
+  - mfc_service_list
+  - free_legal_advice
+  - are_there_notary_offices_in_the_MFC
+  - does_the_mfc_make_a_real_estate_contract
+  - departments_phone_numbers
+  - return_of_the_paid_state_duty
+  - can_i_apply_to_another_mfc
+  - do_i_need_translation_of_documents
+  - ways_to_contact_the_mfc
+  - access_to_gosuslugi_in_MFC
+  - how_to_submit_electronic_documents
+  - submit_documents_to_the_MFC_if_i_applied_for_gosuslugi
+  - get_an_electronic_signature
+  - offices_for_apostilling_documents
+  - apply_for_citizenship_at_the_MFC
+  - office_to_apply_international_passport_new_sample
+  - get_an_OMS_policy
+  - documents_for_the_child_to_school
+  - get_a_patent_for_work
+  - sign_up_for_the_traffic_police
+  - deregister_a_car
+  - get_certificate_of_criminal_record
+  - register_for_the_military
 
 responses:
   utter_default_fallback:
@@ -104,6 +134,60 @@ responses:
     - text: "Рекомендуем данную информацию уточнить на сайте Органа, ответственного за предоставление усуги"
   utter_start_bot:
     - text: "Здравствуйте, я бот МФЦ. Могу ответить на ваши вопросы."
+  utter_result_request_in_gosuslugi:
+    - text: "В настоящее время получить результат услуги, если заявка подана через Портал госуслуги в МФЦ не представляется возможным"
+  utter_which_office_should_i_go_to:
+    - text: "В любой офис МФЦ "
+  utter_list_of_documents_for_mfc:
+    - text: "С перечнем документов по услугам, предоставляемым в МФЦ возможно ознакомится:
+1. В любом офисе МФЦ КК;
+2. На портале МФЦ КК  в разделе \"база услуг\";
+3. По единому номеру телефона горячей линии 88003023444"
+  utter_details_for_payment_of_state_duty:
+    - text: "Информацию о реквизитах для оплаты госпошлины возможно получить в офисе МФЦ КК либо на Портале МФЦ КК в разделе \"База услуг\""
+  utter_how_can_i_pay_the_stamp_duty:
+    - text: "Оплатить госпошлину возможно в в терминалах оплаты, установленных в офисах МФЦ КК,  либо в любом удобном отделении банковского учреждения"
+  utter_example_filling_request:
+    - text: "Образцы заявлений возможно получить в офисе МФЦ КК либо ознакомиться на Портале МФЦ КК  "
+  utter_can_i_use_copy_of_document:
+    - text: "Для оказания услуг в МФЦ  требуется предъявление  подлинника документа, удостоверяющего личность "
+  utter_mfc_service_list:
+    - text: "С перечнем документов по услугам, предоставляемым в МФЦ возможно ознакомится:
+1. В любом офисе МФЦ КК;
+2. На портале МФЦ КК  в разделе \"база услуг\";
+3. По единому номеру телефона горячей линии 8 800 302-34-44"
+  utter_free_legal_advice:
+    - text: "1. Сотрудники МФЦ  оказывают гражданам  консультирование в устной и письменной форме по вопросам, относящимся к компетенции учреждения. Обратится за консультацией о порядке предоставдения государственных и муниципальных услуг можно в офис МФЦ либо по телефону Горячей линии в рабочие часы"
+  utter_are_there_notary_offices_in_the_MFC:
+    - text: "Нотариальные конторы не являются структурным подразделением МФЦ, их местонахождение определяется данными организациями самостоятельно"
+  utter_does_the_mfc_make_a_real_estate_contract:
+    - text: "Услуга по  составлению проектов договоров на отчуждение объектов недвижимого имущества в офисах МФЦ не предоставляется."
+  utter_departments_phone_numbers:
+    - text: "Информация по номерам телефонов горячих линий ведомств, предоставляющих услуги, в МФЦ не предоставляется"
+  utter_return_of_the_paid_state_duty:
+    - text: " Заявление на возврат излишне уплаченной госпошлины необходимо направить в Орган, являющийся получателем средств по  платежу."
+  utter_can_i_apply_to_another_mfc:
+    - text: "Нет. В настоящее время данная возможность отсутствует."
+  utter_do_i_need_translation_of_documents:
+    - text: "Да, треубется. Требования к переводу могут быть указаны в стандарте по услуге в разделе База услуг."
+  utter_ways_to_contact_the_mfc:
+    - text: "Нет. В настоящее время требуется личное обращение заявителя либо его представителя"
+  utter_access_to_gosuslugi_in_MFC:
+    - text: "В офисах МФЦ КК организован доступ заявителей к Порталу госуслуги"
+  utter_how_to_submit_electronic_documents:
+    - text: "В офисах МФЦ предосталяется услуга по размещению электронных дубликатов документов заявителя в личном кабинете заявителя на ЕПГУ. С перечнем документов,  в отношении которых создаются электронные дубликаты документов можно ознакомиться на Портале МФЦ КК в разделе \"База услуг\"."
+  utter_submit_documents_to_the_MFC_if_i_applied_for_gosuslugi:
+    - text: "Нет. По такой заявке заявителю необходимо предоставить документы непосредственного в Орган, в который была подана заявка через портал Госуслуг"
+  utter_get_an_electronic_signature:
+    - text: "Услуга по выпуску ЭЦП в офисах МФЦ не предоставляется."
+  utter_offices_for_apostilling_documents:
+    - text: "Получить услугу по проставлению апостиля на российских официальных документах, подлежащих вывозу за пределы территории Российской Федерации возможно в офисе МФЦ по адресу: г. Краснода, ул. Уральскя 79/2."
+  utter_office_to_apply_international_passport_new_sample:
+    - text: "Перечень МФЦ, предоставляющих данную услугу размещен в разделе База услуг в виде приложения к соглашению"
+  utter_get_certificate_of_criminal_record:
+    - text: "Для получения справки о наличии (отсутствии) судимости с проставлением апостиля заявителю необходимо обратиться в Орган, предоставляющий услугу."
+  utter_this_service_is_not_provided:
+    - text: "Данная услуга через офисы МФЦ КК  не предоставляется"
 
 actions:
   - action_get_confidence
@@ -141,3 +225,27 @@ actions:
   - utter_ticket_issuing_time
   - utter_which_executive_authority_process_my_doc
   - utter_which_government_agency_provides_service
+  - utter_result_request_in_gosuslugi
+  - utter_which_office_should_i_go_to
+  - utter_details_for_payment_of_state_duty
+  - utter_how_can_i_pay_the_stamp_duty
+  - utter_example_filling_request
+  - utter_can_i_use_copy_of_document
+  - utter_mfc_service_list
+  - utter_free_legal_advice
+  - utter_are_there_notary_offices_in_the_MFC
+  - utter_does_the_mfc_make_a_real_estate_contract
+  - utter_departments_phone_numbers
+  - utter_return_of_the_paid_state_duty
+  - utter_can_i_apply_to_another_mfc
+  - utter_do_i_need_translation_of_documents
+  - utter_ways_to_contact_the_mfc
+  - utter_access_to_gosuslugi_in_MFC
+  - utter_how_to_submit_electronic_documents
+  - utter_submit_documents_to_the_MFC_if_i_applied_for_gosuslugi
+  - utter_get_an_electronic_signature
+  - utter_offices_for_apostilling_documents
+  - utter_office_to_apply_international_passport_new_sample
+  - utter_get_certificate_of_criminal_record
+  - utter_list_of_documents_for_mfc
+  - utter_this_service_is_not_provided
