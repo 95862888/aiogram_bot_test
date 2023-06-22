@@ -1,13 +1,6 @@
 version: "3.1"
 
 rules:
-  - rule: proc incorrect answer
-    steps:
-      - intent: incorrect_answer
-      - action: utter_incorrect_answer
-      - intent: correct_answer_number
-      - action: action_add_example
-
   - rule: start dialogue
     steps:
       - intent: start_bot
@@ -206,3 +199,336 @@ rules:
       - intent: which_government_agency_provides_service
       - action: action_get_confidence
       - action: utter_which_government_agency_provides_service
+
+
+  - rule: result_request_in_gosuslugi
+    steps:
+      - intent: result_request_in_gosuslugi
+      - action: utter_result_request_in_gosuslugi
+
+  - rule: which_office_should_i_go_to
+    steps:
+      - intent: which_office_should_i_go_to
+      - action: utter_which_office_should_i_go_to
+
+  - rule: list_of_documents_for_mfc
+    steps:
+      - intent: list_of_documents_for_mfc
+      - action: utter_list_of_documents_for_mfc
+
+  - rule: details_for_payment_of_state_duty
+    steps:
+      - intent: details_for_payment_of_state_duty
+      - action: utter_details_for_payment_of_state_duty
+
+  - rule: how_can_i_pay_the_stamp_duty
+    steps:
+      - intent: how_can_i_pay_the_stamp_duty
+      - action: utter_how_can_i_pay_the_stamp_duty
+
+  - rule: example_filling_request
+    steps:
+      - intent: example_filling_request
+      - action: utter_example_filling_request
+
+  - rule: can_i_use_copy_of_document
+    steps:
+      - intent: can_i_use_copy_of_document
+      - action: utter_can_i_use_copy_of_document
+
+  - rule: mfc_service_list
+    steps:
+      - intent: mfc_service_list
+      - action: utter_mfc_service_list
+
+  - rule: free_legal_advice
+    steps:
+      - intent: free_legal_advice
+      - action: utter_free_legal_advice
+
+  - rule: are_there_notary_offices_in_the_MFC
+    steps:
+      - intent: are_there_notary_offices_in_the_MFC
+      - action: utter_are_there_notary_offices_in_the_MFC
+
+  - rule: does_the_mfc_make_a_real_estate_contract
+    steps:
+      - intent: does_the_mfc_make_a_real_estate_contract
+      - action: utter_does_the_mfc_make_a_real_estate_contract
+
+  - rule: departments_phone_numbers
+    steps:
+      - intent: departments_phone_numbers
+      - action: utter_departments_phone_numbers
+
+  - rule: return_of_the_paid_state_duty
+    steps:
+      - intent: return_of_the_paid_state_duty
+      - action: utter_return_of_the_paid_state_duty
+
+  - rule: can_i_apply_to_another_mfc
+    steps:
+      - intent: can_i_apply_to_another_mfc
+      - action: utter_can_i_apply_to_another_mfc
+
+  - rule: do_i_need_translation_of_documents
+    steps:
+      - intent: do_i_need_translation_of_documents
+      - action: utter_do_i_need_translation_of_documents
+
+  - rule: ways_to_contact_the_mfc
+    steps:
+      - intent: ways_to_contact_the_mfc
+      - action: utter_ways_to_contact_the_mfc
+
+  - rule: utter_access_to_gosuslugi_in_MFC
+    steps:
+      - intent: access_to_gosuslugi_in_MFC
+      - action: utter_access_to_gosuslugi_in_MFC
+
+  - rule: how_to_submit_electronic_documents
+    steps:
+      - intent: how_to_submit_electronic_documents
+      - action: utter_how_to_submit_electronic_documents
+
+  - rule: submit_documents_to_the_MFC_if_i_applied_for_gosuslugi
+    steps:
+      - intent: submit_documents_to_the_MFC_if_i_applied_for_gosuslugi
+      - action: utter_submit_documents_to_the_MFC_if_i_applied_for_gosuslugi
+
+  - rule: get_an_electronic_signature
+    steps:
+      - intent: get_an_electronic_signature
+      - action: utter_get_an_electronic_signature
+
+  - rule: offices_for_apostilling_documents
+    steps:
+      - intent: offices_for_apostilling_documents
+      - action: utter_offices_for_apostilling_documents
+
+  - rule: apply_for_citizenship_at_the_MFC
+    steps:
+      - intent: apply_for_citizenship_at_the_MFC
+      - action: utter_this_service_is_not_provided
+
+  - rule: office_to_apply_international_passport_new_sample
+    steps:
+      - intent: office_to_apply_international_passport_new_sample
+      - action: utter_office_to_apply_international_passport_new_sample
+
+  - rule: get_an_OMS_policy
+    steps:
+      - intent: get_an_OMS_policy
+      - action: utter_this_service_is_not_provided
+
+  - rule: documents_for_the_child_to_school
+    steps:
+      - intent: documents_for_the_child_to_school
+      - action: utter_this_service_is_not_provided
+
+  - rule: get_a_patent_for_work
+    steps:
+      - intent: get_a_patent_for_work
+      - action: utter_this_service_is_not_provided
+
+  - rule: sign_up_for_the_traffic_police
+    steps:
+      - intent: sign_up_for_the_traffic_police
+      - action: utter_this_service_is_not_provided
+
+  - rule: deregister_a_car
+    steps:
+      - intent: deregister_a_car
+      - action: utter_this_service_is_not_provided
+
+  - rule: get_certificate_of_criminal_record
+    steps:
+      - intent: get_certificate_of_criminal_record
+      - action: utter_get_certificate_of_criminal_record
+
+  - rule: register_for_the_military
+    steps:
+      - intent: register_for_the_military
+      - action: utter_this_service_is_not_provided
+
+
+  - rule: rule_61
+    steps:
+      - intent: intent_61
+      - action: utter_61
+
+    
+  - rule: rule_62
+    steps:
+      - intent: intent_62
+      - action: utter_62
+
+    
+  - rule: rule_63
+    steps:
+      - intent: intent_63
+      - action: utter_63
+
+    
+  - rule: rule_64
+    steps:
+      - intent: intent_64
+      - action: utter_64
+
+    
+  - rule: rule_65
+    steps:
+      - intent: intent_65
+      - action: utter_65
+
+    
+  - rule: rule_66
+    steps:
+      - intent: intent_66
+      - action: utter_66
+
+    
+  - rule: rule_67
+    steps:
+      - intent: intent_67
+      - action: utter_67
+
+    
+  - rule: rule_68
+    steps:
+      - intent: intent_68
+      - action: utter_68
+
+    
+  - rule: rule_69
+    steps:
+      - intent: intent_69
+      - action: utter_69
+
+    
+  - rule: rule_70
+    steps:
+      - intent: intent_70
+      - action: utter_70
+
+    
+  - rule: rule_71
+    steps:
+      - intent: intent_71
+      - action: utter_71
+
+    
+  - rule: rule_72
+    steps:
+      - intent: intent_72
+      - action: utter_72
+
+    
+  - rule: rule_73
+    steps:
+      - intent: intent_73
+      - action: utter_73
+
+    
+  - rule: rule_74
+    steps:
+      - intent: intent_74
+      - action: utter_74
+
+    
+  - rule: rule_75
+    steps:
+      - intent: intent_75
+      - action: utter_75
+
+    
+  - rule: rule_76
+    steps:
+      - intent: intent_76
+      - action: utter_76
+
+    
+  - rule: rule_77
+    steps:
+      - intent: intent_77
+      - action: utter_77
+
+    
+  - rule: rule_78
+    steps:
+      - intent: intent_78
+      - action: utter_78
+
+    
+  - rule: rule_79
+    steps:
+      - intent: intent_79
+      - action: utter_79
+
+    
+  - rule: rule_80
+    steps:
+      - intent: intent_80
+      - action: utter_80
+
+    
+  - rule: rule_81
+    steps:
+      - intent: intent_81
+      - action: utter_81
+
+    
+  - rule: rule_82
+    steps:
+      - intent: intent_82
+      - action: utter_82
+
+    
+  - rule: rule_83
+    steps:
+      - intent: intent_83
+      - action: utter_83
+
+    
+  - rule: rule_84
+    steps:
+      - intent: intent_84
+      - action: utter_84
+
+    
+  - rule: rule_85
+    steps:
+      - intent: intent_85
+      - action: utter_85
+
+    
+  - rule: rule_86
+    steps:
+      - intent: intent_86
+      - action: utter_86
+
+    
+  - rule: rule_87
+    steps:
+      - intent: intent_87
+      - action: utter_87
+
+    
+  - rule: rule_88
+    steps:
+      - intent: intent_88
+      - action: utter_88
+
+    
+  - rule: rule_89
+    steps:
+      - intent: intent_89
+      - action: utter_89
+
+    
+  - rule: rule_90
+    steps:
+      - intent: intent_90
+      - action: utter_90
+
+    

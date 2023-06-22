@@ -12,4 +12,4 @@ VOLUME /app
 VOLUME /app/data
 VOLUME /app/models
 
-CMD ["run","-m","/app/models","--debug","--endpoints", "endpoints.yml", "--log-file", "out.log","--enable-api"]
+CMD ["run","-m","/app/models/","--debug","--endpoints", "endpoints.yml", "--log-file", "out.log","--enable-api"]
