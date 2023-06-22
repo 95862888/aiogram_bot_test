@@ -40,6 +40,11 @@ yaml.add_representer(literal_str, represent_literal_str)
 
 
 def add_example(filepath: str, new_example: str, intent_name: str = None):
+    if exists(filepath + '.yml'):
+        filepath = filepath + '.yml'
+    elif exists(filepath + '.yaml'):
+        filepath = filepath + '.yaml'
+
     if not exists(filepath):
         raise Exception(f'Filepath {filepath} not exist')
 
@@ -87,7 +92,7 @@ class ActionAddExample(Action):
         new_examples = user_events[-3]['parse_data']['text']
         intent_name = user_events[-1]['parse_data']['text']
 
-        filepath = f'data/nlu/{intent_name}.yml'
+        filepath = f'data/nlu/{intent_name}'
 
         add_example(filepath, new_examples)
 

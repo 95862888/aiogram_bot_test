@@ -355,180 +355,208 @@ rules:
   - rule: rule_61
     steps:
       - intent: intent_61
+      - action: action_get_confidence
       - action: utter_61
 
     
   - rule: rule_62
     steps:
       - intent: intent_62
+      - action: action_get_confidence
       - action: utter_62
 
     
   - rule: rule_63
     steps:
       - intent: intent_63
+      - action: action_get_confidence
       - action: utter_63
 
     
   - rule: rule_64
     steps:
       - intent: intent_64
+      - action: action_get_confidence
       - action: utter_64
 
     
   - rule: rule_65
     steps:
       - intent: intent_65
+      - action: action_get_confidence
       - action: utter_65
 
     
   - rule: rule_66
     steps:
       - intent: intent_66
+      - action: action_get_confidence
       - action: utter_66
 
     
   - rule: rule_67
     steps:
       - intent: intent_67
+      - action: action_get_confidence
       - action: utter_67
 
     
   - rule: rule_68
     steps:
       - intent: intent_68
+      - action: action_get_confidence
       - action: utter_68
 
     
   - rule: rule_69
     steps:
       - intent: intent_69
+      - action: action_get_confidence
       - action: utter_69
 
     
   - rule: rule_70
     steps:
       - intent: intent_70
+      - action: action_get_confidence
       - action: utter_70
 
     
   - rule: rule_71
     steps:
       - intent: intent_71
+      - action: action_get_confidence
       - action: utter_71
 
     
   - rule: rule_72
     steps:
       - intent: intent_72
+      - action: action_get_confidence
       - action: utter_72
 
     
   - rule: rule_73
     steps:
       - intent: intent_73
+      - action: action_get_confidence
       - action: utter_73
 
     
   - rule: rule_74
     steps:
       - intent: intent_74
+      - action: action_get_confidence
       - action: utter_74
 
     
   - rule: rule_75
     steps:
       - intent: intent_75
+      - action: action_get_confidence
       - action: utter_75
 
     
   - rule: rule_76
     steps:
       - intent: intent_76
+      - action: action_get_confidence
       - action: utter_76
 
     
   - rule: rule_77
     steps:
       - intent: intent_77
+      - action: action_get_confidence
       - action: utter_77
 
     
   - rule: rule_78
     steps:
       - intent: intent_78
+      - action: action_get_confidence
       - action: utter_78
 
     
   - rule: rule_79
     steps:
       - intent: intent_79
+      - action: action_get_confidence
       - action: utter_79
 
     
   - rule: rule_80
     steps:
       - intent: intent_80
+      - action: action_get_confidence
       - action: utter_80
 
     
   - rule: rule_81
     steps:
       - intent: intent_81
+      - action: action_get_confidence
       - action: utter_81
 
     
   - rule: rule_82
     steps:
       - intent: intent_82
+      - action: action_get_confidence
       - action: utter_82
 
     
   - rule: rule_83
     steps:
       - intent: intent_83
+      - action: action_get_confidence
       - action: utter_83
 
     
   - rule: rule_84
     steps:
       - intent: intent_84
+      - action: action_get_confidence
       - action: utter_84
 
     
   - rule: rule_85
     steps:
       - intent: intent_85
+      - action: action_get_confidence
       - action: utter_85
 
     
   - rule: rule_86
     steps:
       - intent: intent_86
+      - action: action_get_confidence
       - action: utter_86
 
     
   - rule: rule_87
     steps:
       - intent: intent_87
+      - action: action_get_confidence
       - action: utter_87
 
     
   - rule: rule_88
     steps:
       - intent: intent_88
+      - action: action_get_confidence
       - action: utter_88
 
     
   - rule: rule_89
     steps:
       - intent: intent_89
+      - action: action_get_confidence
       - action: utter_89
 
     
   - rule: rule_90
     steps:
       - intent: intent_90
+      - action: action_get_confidence
       - action: utter_90
-
-    
