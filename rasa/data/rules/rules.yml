@@ -351,7 +351,6 @@ rules:
       - intent: register_for_the_military
       - action: utter_this_service_is_not_provided
 
-
   - rule: rule_61
     steps:
       - intent: intent_61
@@ -530,5 +529,3 @@ rules:
     steps:
       - intent: intent_90
       - action: utter_90
-
-    
