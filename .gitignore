@@ -3,3 +3,4 @@ aiogram/.env
 .idea
 rasa/raw_data/
 rasa/raw_data/*
+rasa/models/*

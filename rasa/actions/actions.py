@@ -6,6 +6,7 @@
 
 import yaml
 from typing import Any, Text, Dict, List
+from os import path
 from os.path import exists, isfile
 from yaml.representer import SafeRepresenter
 
@@ -40,6 +41,8 @@ yaml.add_representer(literal_str, represent_literal_str)
 
 
 def add_example(filepath: str, new_example: str, intent_name: str = None):
+    filepath, _ = path.splitext(filepath)
+
     if exists(filepath + '.yml'):
         filepath = filepath + '.yml'
     elif exists(filepath + '.yaml'):
