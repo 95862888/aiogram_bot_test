@@ -1,6 +1,6 @@
 version: '3.1'
 nlu:
-  - regex: answer_number [1; 90]
+  - regex: answer_number
     examples: |-
       - ^([1-9]|[1-8][0-9]|90)$
   - synonym: cancel
