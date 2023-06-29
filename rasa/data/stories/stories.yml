@@ -15,10 +15,10 @@ stories:
       - action: utter_cancel_pre_registration
       - action: utter_pre_registration
 
-  - story: add correct example
-    steps:
-      - intent: correct_answer_number
-      - action: action_add_example
+#  - story: add correct example
+#    steps:
+#      - intent: correct_answer_number
+#      - action: action_add_example
 
 #  - story: add example for incorrect intent
 #    steps:

@@ -23,15 +23,6 @@ rules:
       - action: action_get_confidence
       - action: utter_call_employees_to_home
 
-#  - rule: Call employee to home, ask for prefentials
-#    steps:
-#      - intent: call_employees_to_home
-#      - action: action_get_confidence
-#      - action: utter_call_employees_to_home
-#      - intent: preferential_categories
-#      - action: action_get_confidence
-#      - action: utter_prefential_categories_calling_employee_home
-
   - rule: Answer to cancel_pre_registration
     steps:
       - intent: cancel_pre_registration
