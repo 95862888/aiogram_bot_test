@@ -1,12 +1,12 @@
 version: "3.1"
 
 stories:
-  - story: proc incorrect answer
-    steps:
-      - intent: incorrect_answer
-      - action: utter_incorrect_answer
-      - intent: correct_answer_number
-      - action: action_add_example
+#  - story: proc incorrect answer
+#    steps:
+#      - intent: incorrect_answer
+#      - action: utter_incorrect_answer
+#      - intent: correct_answer_number
+#      - action: action_add_example
 
   - story: cancel and appoint pre registration
     steps:
