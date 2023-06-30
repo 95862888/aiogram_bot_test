@@ -1,12 +1,19 @@
 version: "3.1"
 
 rules:
+  - rule: cancel and appoint pre registration
+    steps:
+      - intent: cancel_and_appoint_pre_registration
+      - action: action_get_confidence
+      - action: utter_cancel_pre_registration
+      - action: utter_pre_registration
+      
   - rule: proc incorrect answer
     steps:
       - intent: incorrect_answer
       - action: utter_incorrect_answer
       
-  - rule:
+  - rule: add example
     steps:
       - intent: correct_answer_number
       - action: action_add_example
